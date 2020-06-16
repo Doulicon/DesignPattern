@@ -1,4 +1,4 @@
-package study.fyq.design.factory;
+package study.fyq.design.factory.simpleFactory;
 
 /**
  * @author fengyongquan

@@ -1,4 +1,4 @@
-package study.fyq.design.factory;
+package study.fyq.design.factory.simpleFactory;
 
 import java.util.Properties;
 
@@ -8,7 +8,7 @@ import java.util.Properties;
  * 利用配置文件来配置类名，从而生成所需的商品，类似IoC
  * @date 2020/6/9
  */
-public class Factory {
+public class SimpleFactoryPlus {
 
     public static Fruit getInstance(String className){
         Fruit fruit = null;
@@ -27,7 +27,7 @@ public class Factory {
          //TODO 获取配置文件的值
          Properties pro = new Properties();
 
-         Fruit fruit = Factory.getInstance(pro.getProperty("apple"));
+         Fruit fruit = SimpleFactoryPlus.getInstance(pro.getProperty("apple"));
          fruit.product();
         }
 }
